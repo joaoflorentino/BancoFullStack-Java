@@ -1,0 +1,13 @@
+package pacote;
+
+public class PrimeiraAtiv {
+
+	public static void main(String[] args) {
+		// Inicio
+		int lisT[] = new int[6];
+		int matrz[][] = new int[6][6];
+		
+
+	}
+
+}

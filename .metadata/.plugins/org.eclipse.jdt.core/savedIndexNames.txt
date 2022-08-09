@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/media/joaoflorentino/J_FLORENTINO/FullStack-UFSC/ATIVIDADES/.metadata/.plugins/org.eclipse.jdt.core
+258585374.index
+2550501080.index
+1865797976.index
