@@ -48,7 +48,8 @@ public class PrimeiraAtiv {
 			
 		}
 		return matrz;
-
+		//mediaMtz(matrz);
+		
 	}
 	
 	public static float mediaMtz(int mat[][]) {
@@ -62,7 +63,7 @@ public class PrimeiraAtiv {
 		float media = med/36;
 		System.out.println("Valor medio da soma dos elementos da matriz = " + media);
 		return media;
-
+		//ComparaEsoma(mat,media);
 	}
 	
 	public static int ComparaEsoma(int mat[][], float media) {
@@ -80,5 +81,5 @@ public class PrimeiraAtiv {
 		return somaMaiores;
 	}
 
-} // FIM da classe
+}
 

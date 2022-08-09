@@ -14,7 +14,7 @@ public class PrimeiraAtiv {
 	
 	public static void main(String[] args) {
 		// Inicio
-		PrimeiraAtiv(5,6,7,8,9,10); // lista de valores para calculo - cria lista
+		PrimeiraAtiv(5,5,7,8,9,1); // lista de valores para calculo - cria lista
 		System.out.println("Esta é a lista de valores: ");
 		System.out.println(Arrays.toString(lisT));
 		mt = ConstroeMtz(lisT); // Chama a criação da Matriz 
