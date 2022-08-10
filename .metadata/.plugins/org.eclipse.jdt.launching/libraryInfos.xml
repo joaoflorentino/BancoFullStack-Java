@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
+    <libraryInfo home="/run/user/1000/doc/3fcbeef8/jre1.8.0_202" version="1.8.0_202">
+        <bootpath>
+            <entry path="/run/user/1000/doc/3fcbeef8/jre1.8.0_202/lib/resources.jar"/>
+            <entry path="/run/user/1000/doc/3fcbeef8/jre1.8.0_202/lib/rt.jar"/>
+            <entry path="/run/user/1000/doc/3fcbeef8/jre1.8.0_202/lib/sunrsasign.jar"/>
+            <entry path="/run/user/1000/doc/3fcbeef8/jre1.8.0_202/lib/jsse.jar"/>
+            <entry path="/run/user/1000/doc/3fcbeef8/jre1.8.0_202/lib/jce.jar"/>
+            <entry path="/run/user/1000/doc/3fcbeef8/jre1.8.0_202/lib/charsets.jar"/>
+            <entry path="/run/user/1000/doc/3fcbeef8/jre1.8.0_202/lib/jfr.jar"/>
+            <entry path="/run/user/1000/doc/3fcbeef8/jre1.8.0_202/classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="/run/user/1000/doc/3fcbeef8/jre1.8.0_202/lib/ext"/>
+            <entry path="/usr/java/packages/lib/ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="/run/user/1000/doc/3fcbeef8/jre1.8.0_202/lib/endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
     <libraryInfo home="/app/eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.3.v20220515-1416" version="17.0.3"/>
     <libraryInfo home="/app/eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_17.0.3.v20220515-1416/jre" version="17.0.3"/>
+    <libraryInfo home="/run/user/1000/doc/f57052da/jre1.8.0_333" version="1.8.0_333">
+        <bootpath>
+            <entry path="/run/user/1000/doc/f57052da/jre1.8.0_333/lib/resources.jar"/>
+            <entry path="/run/user/1000/doc/f57052da/jre1.8.0_333/lib/rt.jar"/>
+            <entry path="/run/user/1000/doc/f57052da/jre1.8.0_333/lib/sunrsasign.jar"/>
+            <entry path="/run/user/1000/doc/f57052da/jre1.8.0_333/lib/jsse.jar"/>
+            <entry path="/run/user/1000/doc/f57052da/jre1.8.0_333/lib/jce.jar"/>
+            <entry path="/run/user/1000/doc/f57052da/jre1.8.0_333/lib/charsets.jar"/>
+            <entry path="/run/user/1000/doc/f57052da/jre1.8.0_333/lib/jfr.jar"/>
+            <entry path="/run/user/1000/doc/f57052da/jre1.8.0_333/classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="/run/user/1000/doc/f57052da/jre1.8.0_333/lib/ext"/>
+            <entry path="/usr/java/packages/lib/ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="/run/user/1000/doc/f57052da/jre1.8.0_333/lib/endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
 </libraryInfos>
