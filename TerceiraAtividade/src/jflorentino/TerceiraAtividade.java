@@ -75,7 +75,7 @@ public class TerceiraAtividade {
 	}
 	
 	// Entrada dos Metodos 
-	public static float getMedia(float nota01, float nota02, float notaTrabalho) {
+	public  float getMedia(float nota01, float nota02, float notaTrabalho) {
 		/** Calcula a media das notas com respectivos pesos */
 		float pesoProvas = 2.5f;
 		float pesoTrabalho = 5.0f;
@@ -84,7 +84,7 @@ public class TerceiraAtividade {
 		return mediaNotas;
 			
 	}
-	public static float confereMedia(float notamedia) {
+	public  float confereMedia(float notamedia) {
 		/**Confere se a media é maior que valor de aprovação*/
 		float aprovacao = 5.0f;
 		if (notamedia <= aprovacao) {
