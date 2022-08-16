@@ -2,5 +2,6 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="QuartaAtividade/src"/>
+	<classpathentry kind="lib" path="/media/joaoflorentino/J_FLORENTINO/FullStack-UFSC/ATIVIDADES/TerceiraAtividade/src/jflorentino"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
