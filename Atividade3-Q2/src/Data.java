@@ -118,7 +118,7 @@ public class Data {
 		else if (resp == 1) {
 			System.out.println("Data menor que a do Objeto inicial !!");
 		}
-		
+		System.out.println("--- FIM do Programa Data ---");
 	}	
 	
 }

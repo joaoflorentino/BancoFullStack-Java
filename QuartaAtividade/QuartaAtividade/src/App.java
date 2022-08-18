@@ -1,8 +1,8 @@
-import jflorentino.TerceiraAtividade;
+import jflorentino.Aluno;
 
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("João Florentino");
-        TerceiraAtividade novo = new TerceiraAtividade();
+        Aluno novo = new Aluno();
     }
 }
