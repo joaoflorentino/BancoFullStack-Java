@@ -7,7 +7,7 @@ public class Conta {
 	private boolean status;
 	private String senha;
 	private float saldo;
-	private String tipo = "cc";
+	private String tipo = "Conta Comum";
 	
 	
 	
@@ -113,30 +113,44 @@ public class Conta {
 	}
 	
 	// Metodos da classe Conta poupanca
-	public void deposito(int i) {
+	public void deposito(float i) {
 		/** Calculo de novo saldo por deposito */
 		this.saldo = this.saldo + i;
-		
-		
 	}
 
 	// Metodo da classe conta
-	public void saque(int i) {
+	public void saque(float i) {
 		/** Calculo de novo saldo por saque */
 		this.saldo = this.saldo - i;
-		
 		
 	}
 
 
 	public void atualizaTaxa() {
 		/** Calculo da taxa de conta */
-		
+		ContaEspecial c =  new ContaEspecial();
+		ContaPoupanca p = new ContaPoupanca();
 		String k1 = this.tipo;
-		
-		 
-		
-		
+		String k2 = c.gettipo();
+		String k3 = p.gettipo();
+		if( k1 == "Conta Comum") {
+			float tx = 20f;
+			saque(tx);
+		} else if (k2 == "Conta Especial") {
+			float tx = 30f;
+			saque(tx);
+		} else if (k3 == "Conta Poupanca") {
+			this.saldo = this.saldo * 1.005f;
+		}	
+	
+	}
+
+	// Metodo de relatorio
+	public void relatorio() {
+		// TODO Auto-generated method stub
+		System.out.println("-------------------------------");
+		System.out.println("Conta: " + getNumero());
+		System.out.println("Tipo: " + gettipo());
 	}
 	
 	

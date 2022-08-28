@@ -3,7 +3,7 @@ package jflorentino;
 public class ContaPoupanca extends Conta {
 	private int diaAniversario;
 	private String titularPoupanca;
-	private String tipo = "cp";
+	private String tipo = "Conta Poupanca";
 	
 	// Metodos Construtores da classe 
 	public ContaPoupanca() {

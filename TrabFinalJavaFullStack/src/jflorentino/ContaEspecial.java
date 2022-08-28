@@ -3,7 +3,7 @@ package jflorentino;
 public class ContaEspecial extends Conta {
 	private float limite;
 	private String titular;
-	private String tipo = "cce";
+	private String tipo = "Conta Especial";
 	
 	//Construtor conta especial 
 	public ContaEspecial() {
