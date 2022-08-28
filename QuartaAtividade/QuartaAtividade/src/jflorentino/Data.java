@@ -21,7 +21,7 @@ public class Data {
 		
 	}
 
-	private boolean validaData(int dia2, int mes2, int ano2) {
+	public boolean validaData(int dia2, int mes2, int ano2) {
 		/** validar a data para continuar processamento */
 		if(((dia2 >= 1) && (dia2 <= 31)) && ((mes2 >= 1) && (mes2 < 13)) && (ano2 > 0)) {
 			return true;

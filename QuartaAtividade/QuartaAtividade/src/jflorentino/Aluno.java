@@ -4,6 +4,7 @@ public class Aluno {
 	/** Classe que cria um aluno no projeto*/
 	private String matricula;
 	private String nome;
+	private int data;
 	private float nota01;
 	private float nota02;
 	private float notaTrabalho;
@@ -75,6 +76,8 @@ public class Aluno {
 	}
 	
 	// Entrada dos Metodos 
+	
+	
 	public  float getMedia(float nota01, float nota02, float notaTrabalho) {
 		/** Calcula a media das notas com respectivos pesos */
 		float pesoProvas = 2.5f;
