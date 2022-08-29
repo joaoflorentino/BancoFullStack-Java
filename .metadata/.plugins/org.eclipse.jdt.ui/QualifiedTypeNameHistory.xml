@@ -10,7 +10,8 @@
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="jflorentino.Data"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="jflorentino.ContaEspecial"/>
     <fullyQualifiedTypeName name="jflorentino.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="jflorentino.Pessoa"/>
 </qualifiedTypeNameHistroy>
