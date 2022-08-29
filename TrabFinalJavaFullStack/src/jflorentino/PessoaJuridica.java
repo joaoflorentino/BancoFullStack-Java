@@ -1,25 +1,23 @@
 package jflorentino;
 
-public class PessoaJuridica {
+public class PessoaJuridica extends Pessoa{
 	
 	private String cnpj;
-	private String nome;
 	private String cidade;
 	private String estado;
 	
 	// Metodos Contrutores
 	public PessoaJuridica(String cnpj, String nome, String cidade, String estado) {
 		/** COnstrutor com todos os parametros */
-		super();
+		super(nome);
 		this.cnpj = cnpj;
-		this.nome = nome;
 		this.cidade = cidade;
 		this.estado = estado;
 	}
 
 	public PessoaJuridica() {
 		/** Construtor padrão */
-		super();
+		super(getNome());
 	}
 
 	/**
@@ -34,20 +32,6 @@ public class PessoaJuridica {
 	 */
 	public void setCnpj(String cnpj) {
 		this.cnpj = cnpj;
-	}
-
-	/**
-	 * @return the nome
-	 */
-	public String getNome() {
-		return nome;
-	}
-
-	/**
-	 * @param nome the nome to set
-	 */
-	public void setNome(String nome) {
-		this.nome = nome;
 	}
 
 	/**

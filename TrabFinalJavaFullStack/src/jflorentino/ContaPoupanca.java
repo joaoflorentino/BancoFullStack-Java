@@ -6,14 +6,10 @@ public class ContaPoupanca extends Conta {
 	private String tipo = "Conta Poupanca";
 	
 	// Metodos Construtores da classe 
-	public ContaPoupanca() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
 	public ContaPoupanca(int numero, String dataAbert, boolean status,
-			String senha, float saldo, int diaAniversario, String titularPoupanca ) {
-		super(numero, dataAbert, status, senha, saldo);
+			String senha, float saldo, int diaAniversario, Pessoa titularPoupanca ) {
+		super(numero, dataAbert, status, senha, saldo, titularPoupanca);
 		// TODO Auto-generated constructor stub
 	}
 

@@ -12,7 +12,7 @@ public class Conta {
 	
 	
 	//Metodos Construtores
-	public Conta(int numero, String dataAbert, boolean status, String senha, float saldo) {
+	public Conta(int numero, String dataAbert, boolean status, String senha, float saldo, Pessoa pessoa) {
 		/** Constritor com todos os parametros */
 		super();
 		this.numero = numero;

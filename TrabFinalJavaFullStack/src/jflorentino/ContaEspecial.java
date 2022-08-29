@@ -11,8 +11,8 @@ public class ContaEspecial extends Conta {
 		// TODO Auto-generated constructor stub
 	}
 	public ContaEspecial(int numero, String dataAbert, boolean status, String senha,
-			float saldo, float limite, String titular) {
-		super(numero, dataAbert, status, senha, saldo);
+			float saldo, float limite, Pessoa titular) {
+		super(numero, dataAbert, status, senha, saldo, titular);
 		// TODO Auto-generated constructor stub
 	}
 	/**

@@ -4,6 +4,7 @@ import java.util.List;
 import jflorentino.Conta;
 import jflorentino.ContaEspecial;
 import jflorentino.ContaPoupanca;
+import jflorentino.Pessoa;
 import jflorentino.PessoaFisica;
 import jflorentino.PessoaJuridica;
 

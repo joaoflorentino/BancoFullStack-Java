@@ -1,8 +1,7 @@
 package jflorentino;
 
-public class PessoaFisica {
+public class PessoaFisica extends Pessoa{
 	private String cpf;
-	private String nome;
 	private String nascimento;
 	private String rg;
 	private float renda = 0f;
@@ -10,9 +9,8 @@ public class PessoaFisica {
 	//Metodos Construtores
 	public PessoaFisica(String cpf, String nome, String nascimento, String rg, float renda) {
 		/**  Construtor com todos os ites da conta */
-		super();
+		super(nome);
 		this.cpf = cpf;
-		this.nome = nome;
 		this.nascimento = nascimento;
 		this.rg = rg;
 		this.renda = renda;
@@ -20,7 +18,7 @@ public class PessoaFisica {
 
 	public PessoaFisica() {
 		/** Construtor padrão */
-		super();
+		super(getNome());
 	}
 
 	/**
@@ -35,20 +33,6 @@ public class PessoaFisica {
 	 */
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
-	}
-
-	/**
-	 * @return the nome
-	 */
-	public String getNome() {
-		return nome;
-	}
-
-	/**
-	 * @param nome the nome to set
-	 */
-	public void setNome(String nome) {
-		this.nome = nome;
 	}
 
 	/**
