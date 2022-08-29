@@ -115,6 +115,7 @@ public class Conta {
 	// Metodos da classe Conta poupanca
 	public void deposito(float i) {
 		/** Calculo de novo saldo por deposito */
+		float valorPositivo = i;
 		this.saldo = this.saldo + i;
 	}
 
@@ -147,10 +148,22 @@ public class Conta {
 
 	// Metodo de relatorio
 	public void relatorio() {
-		// TODO Auto-generated method stub
+		String m = "";
 		System.out.println("-------------------------------");
 		System.out.println("Conta: " + getNumero());
 		System.out.println("Tipo: " + gettipo());
+		System.out.println("Abertura: " + getDataAbert());
+		if (isStatus()) {
+			m = "Ativa";
+		} else {
+			m = "Inativa";
+		}
+		System.out.println("Status: " + m);
+		System.out.println("Titular: " );
+		System.out.println("Movimentos: ");
+		System.out.println();
+		System.out.println("Saldo: " + getSaldo());
+		
 	}
 	
 	

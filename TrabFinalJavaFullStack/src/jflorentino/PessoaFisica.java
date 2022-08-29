@@ -76,14 +76,16 @@ public class PessoaFisica extends Pessoa{
 	public void setRenda(float renda) {
 		this.renda = renda;
 	}
+
+	@Override
+	public String toString() {
+		return "PessoaFisica [cpf=" + cpf + ", nascimento=" + nascimento + ", rg=" + rg + ", renda=" + renda + "]";
+	}
 	
 	
 	
 	
 	
-	
-	
-	
-	
+
 	
 }

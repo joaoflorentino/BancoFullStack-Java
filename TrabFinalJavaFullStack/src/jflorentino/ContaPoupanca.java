@@ -13,6 +13,10 @@ public class ContaPoupanca extends Conta {
 		// TODO Auto-generated constructor stub
 	}
 
+	public ContaPoupanca() {
+		/** Construtor padrao */
+	}
+
 	/**
 	 * @return the diaAniversario
 	 */
