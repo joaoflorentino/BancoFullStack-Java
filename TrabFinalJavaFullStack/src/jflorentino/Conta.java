@@ -112,42 +112,58 @@ public class Conta {
 		return tipo;
 	}
 	
-	// Metodos da classe Conta poupanca
+	// Metodos da classe Conta
 	public void deposito(float i) {
 		/** Calculo de novo saldo por deposito */
+		int numero = getNumero();
+		String operacao = "Deposito";
 		float valorPositivo = i;
 		this.saldo = this.saldo + i;
+		Movimentos l = new Movimentos(numero, operacao, valorPositivo);
+		l.add(l);
 	}
 
-	// Metodo da classe conta
 	public void saque(float i) {
 		/** Calculo de novo saldo por saque */
+		int numero = getNumero();
+		String operacao = "Saque";
+		float valorNegativo = i;
 		this.saldo = this.saldo - i;
+		Movimentos k = new Movimentos(numero, operacao, valorNegativo);
+		k.add(k);
 		
 	}
 
-
 	public void atualizaTaxa() {
 		/** Calculo da taxa de conta */
-		ContaEspecial c =  new ContaEspecial();
-		ContaPoupanca p = new ContaPoupanca();
-		String k1 = this.tipo;
-		String k2 = c.gettipo();
-		String k3 = p.gettipo();
-		if( k1 == "Conta Comum") {
-			float tx = 20f;
-			saque(tx);
-		} else if (k2 == "Conta Especial") {
-			float tx = 30f;
-			saque(tx);
-		} else if (k3 == "Conta Poupanca") {
-			this.saldo = this.saldo * 1.005f;
-		}	
-	
+		String k = gettipo();
+		float tx = 0f;
+		if( k == "Conta Comum") {
+			tx = 20f;
+			this.saldo = this.saldo - tx;
+		} else if (k == "Conta Especial") {
+			tx = 30f;
+			this.saldo = this.saldo - tx;
+		} else if (k == "Conta Poupanca") {
+			tx = this.saldo * 1.005f - this.saldo;
+			this.saldo = this.saldo + tx;
+		}
+		int numero = getNumero();
+		String operacao = "Taxa";
+		float valorTaxa = tx;
+		Movimentos c = new Movimentos(numero, operacao, valorTaxa);
+		c.add(c);
+		
+		/*
+		List<Movimentos> mov = new LinkedList<>();
+		mov.add(new Movimentos(numero, operacao, valorNegativo));
+	*/
 	}
 
+	
 	// Metodo de relatorio
 	public void relatorio() {
+		Movimentos imp = new Movimentos();
 		String m = "";
 		System.out.println("-------------------------------");
 		System.out.println("Conta: " + getNumero());
@@ -159,8 +175,9 @@ public class Conta {
 			m = "Inativa";
 		}
 		System.out.println("Status: " + m);
-		System.out.println("Titular: " );
+		System.out.println("Titular: " + Pessoa.getNome());
 		System.out.println("Movimentos: ");
+		imp.resgata();					
 		System.out.println();
 		System.out.println("Saldo: " + getSaldo());
 		

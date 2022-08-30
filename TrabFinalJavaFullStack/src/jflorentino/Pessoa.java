@@ -4,7 +4,7 @@ public class Pessoa {
 	private static String nome;
 	
 	public Pessoa(String nome) {
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public static String getNome() {
