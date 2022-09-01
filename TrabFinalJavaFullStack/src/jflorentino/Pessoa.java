@@ -1,7 +1,7 @@
 package jflorentino;
 
 public class Pessoa {
-	private static String nome;
+	protected static String nome;
 	
 	public Pessoa(String nome) {
 		

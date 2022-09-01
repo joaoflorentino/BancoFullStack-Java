@@ -14,6 +14,7 @@ public class PessoaFisica extends Pessoa{
 		this.nascimento = nascimento;
 		this.rg = rg;
 		this.renda = renda;
+		nome = getNome();
 	}
 
 	public PessoaFisica() {
@@ -79,7 +80,8 @@ public class PessoaFisica extends Pessoa{
 
 	@Override
 	public String toString() {
-		return "PessoaFisica [cpf=" + cpf + ", nascimento=" + nascimento + ", rg=" + rg + ", renda=" + renda + "]";
+		return "PessoaFisica [cpf=" + cpf + ", nascimento=" 
+	+ nascimento + ", rg=" + rg + ", renda=" + renda + ", nome=" + nome + "]";
 	}
 	
 	

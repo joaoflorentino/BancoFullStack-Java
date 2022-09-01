@@ -189,7 +189,6 @@ public class Conta {
 	
 	// Metodo de relatorio
 	public void relatorio() {
-		//Movimentos imp = new Movimentos();
 		int i = 1;
 		String m = "";
 		System.out.println("-------------------------------");
@@ -205,11 +204,10 @@ public class Conta {
 		System.out.println("Titular: " + getTitular());
 		System.out.println("Movimentos: ");
 		for(Movimentos mv : movimentos) {
-			System.out.println(i + mv.toString());
+			System.out.println(i + "   " + mv.toString());
 			i = i+1;
 		}
 						
-		System.out.println();
 		System.out.println("Saldo: " + getSaldo());
 		
 	}
