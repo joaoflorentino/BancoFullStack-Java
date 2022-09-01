@@ -1,5 +1,8 @@
 package jflorentino;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class Conta {
 	
 	private int numero;
@@ -8,8 +11,11 @@ public class Conta {
 	private String senha;
 	private float saldo;
 	private String tipo = "Conta Comum";
+	private Pessoa titular;
 	
+	protected List<Movimentos> movimentos = new LinkedList<Movimentos>();
 	
+		
 	
 	//Metodos Construtores
 	public Conta(int numero, String dataAbert, boolean status, String senha, float saldo, Pessoa pessoa) {
@@ -20,6 +26,7 @@ public class Conta {
 		this.status = status;
 		this.senha = senha;
 		this.saldo = saldo;
+		this.titular = pessoa;
 	}
 
 
@@ -28,6 +35,23 @@ public class Conta {
 		super();
 	}
 
+	
+	// Getrs    &  Setrs 
+	
+	/**
+	 * @return the titular
+	 */
+	public Pessoa getTitular() {
+		return titular;
+	}
+
+
+	/**
+	 * @param titular the titular to set
+	 */
+	public void setTitular(Pessoa titular) {
+		this.titular = titular;
+	}
 
 	/**
 	 * @return the numero
@@ -100,7 +124,6 @@ public class Conta {
 		return saldo;
 	}
 
-
 	/**
 	 * @param saldo the saldo to set
 	 */
@@ -112,6 +135,9 @@ public class Conta {
 		return tipo;
 	}
 	
+	
+	
+	
 	// Metodos da classe Conta
 	public void deposito(float i) {
 		/** Calculo de novo saldo por deposito */
@@ -120,7 +146,7 @@ public class Conta {
 		float valorPositivo = i;
 		this.saldo = this.saldo + i;
 		Movimentos l = new Movimentos(numero, operacao, valorPositivo);
-		l.add(l);
+		this.movimentos.add(l);
 	}
 
 	public void saque(float i) {
@@ -130,7 +156,7 @@ public class Conta {
 		float valorNegativo = i;
 		this.saldo = this.saldo - i;
 		Movimentos k = new Movimentos(numero, operacao, valorNegativo);
-		k.add(k);
+		this.movimentos.add(k);
 		
 	}
 
@@ -152,7 +178,7 @@ public class Conta {
 		String operacao = "Taxa";
 		float valorTaxa = tx;
 		Movimentos c = new Movimentos(numero, operacao, valorTaxa);
-		c.add(c);
+		this.movimentos.add(c);
 		
 		/*
 		List<Movimentos> mov = new LinkedList<>();
@@ -163,7 +189,8 @@ public class Conta {
 	
 	// Metodo de relatorio
 	public void relatorio() {
-		Movimentos imp = new Movimentos();
+		//Movimentos imp = new Movimentos();
+		int i = 1;
 		String m = "";
 		System.out.println("-------------------------------");
 		System.out.println("Conta: " + getNumero());
@@ -175,9 +202,13 @@ public class Conta {
 			m = "Inativa";
 		}
 		System.out.println("Status: " + m);
-		System.out.println("Titular: " + Pessoa.getNome());
+		System.out.println("Titular: " + getTitular());
 		System.out.println("Movimentos: ");
-		imp.resgata();					
+		for(Movimentos mv : movimentos) {
+			System.out.println(i + mv.toString());
+			i = i+1;
+		}
+						
 		System.out.println();
 		System.out.println("Saldo: " + getSaldo());
 		

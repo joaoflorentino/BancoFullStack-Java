@@ -1,7 +1,5 @@
 package jflorentino;
 
-import java.util.LinkedList;
-
 
 public class Movimentos {
 	/** Cria uma lista de operacoes na conta do cliente */
@@ -20,19 +18,6 @@ public class Movimentos {
 		this.operacao = operacao;
 		this.valor = valor;
 	}
-		
-	private LinkedList<Movimentos> mov = new LinkedList<Movimentos>();
-	
-	
-	public void add(Movimentos mov) {
-		this.mov.add(mov);
-		
-	}
-	public void resgata() {
-		for(Movimentos m : mov) {
-			System.out.println(m.toString());
-		}
-	}
-	
+
 
 }

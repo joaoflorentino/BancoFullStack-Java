@@ -27,18 +27,7 @@ public class ContaEspecial extends Conta {
 	public void setLimite(float limite) {
 		this.limite = limite;
 	}
-	/**
-	 * @return the titular
-	 */
-	public String getTitular() {
-		return titular;
-	}
-	/**
-	 * @param titular the titular to set
-	 */
-	public void setTitular(String titular) {
-		this.titular = titular;
-	}
+	
 	
 	public String gettipo() {
 		return tipo;
