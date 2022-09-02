@@ -2,6 +2,7 @@ package jflorentino;
 
 public class PessoaFisica extends Pessoa{
 	private String cpf;
+	private String nome;
 	private String nascimento;
 	private String rg;
 	private float renda = 0f;
@@ -11,15 +12,16 @@ public class PessoaFisica extends Pessoa{
 		/**  Construtor com todos os ites da conta */
 		super(nome);
 		this.cpf = cpf;
+		this.nome = nome;
 		this.nascimento = nascimento;
 		this.rg = rg;
 		this.renda = renda;
-		nome = getNome();
+		
 	}
 
 	public PessoaFisica() {
 		/** Construtor padrão */
-		super(getNome());
+		super(Pessoa.nome);
 	}
 
 	/**
@@ -77,6 +79,7 @@ public class PessoaFisica extends Pessoa{
 	public void setRenda(float renda) {
 		this.renda = renda;
 	}
+	
 
 	@Override
 	public String toString() {

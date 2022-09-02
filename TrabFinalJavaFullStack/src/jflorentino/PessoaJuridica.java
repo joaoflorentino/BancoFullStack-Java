@@ -3,6 +3,7 @@ package jflorentino;
 public class PessoaJuridica extends Pessoa{
 	
 	private String cnpj;
+	private String nome;
 	private String cidade;
 	private String estado;
 	
@@ -11,13 +12,15 @@ public class PessoaJuridica extends Pessoa{
 		/** COnstrutor com todos os parametros */
 		super(nome);
 		this.cnpj = cnpj;
+		this.nome = nome;
 		this.cidade = cidade;
 		this.estado = estado;
+	
 	}
 
 	public PessoaJuridica() {
 		/** Construtor padrão */
-		super(getNome());
+		super(Pessoa.nome);
 	}
 
 	/**
@@ -60,6 +63,13 @@ public class PessoaJuridica extends Pessoa{
 	 */
 	public void setEstado(String estado) {
 		this.estado = estado;
+	}
+
+
+	@Override
+	public String toString() {
+		return "PessoaJuridica [cnpj=" + cnpj + ", cidade=" 
+	+ cidade + ", estado=" + estado + "nome=" + nome +"]";
 	}
 	
 	

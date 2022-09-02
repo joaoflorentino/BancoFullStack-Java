@@ -11,9 +11,9 @@
     <fullyQualifiedTypeName name="jflorentino.Data"/>
     <fullyQualifiedTypeName name="jflorentino.ContaEspecial"/>
     <fullyQualifiedTypeName name="jflorentino.ContaPoupanca"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="jflorentino.Pessoa"/>
     <fullyQualifiedTypeName name="jflorentino.Movimentos"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
