@@ -15,5 +15,7 @@
     <fullyQualifiedTypeName name="jflorentino.Pessoa"/>
     <fullyQualifiedTypeName name="jflorentino.Movimentos"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="jflorentino.ElementosDoBanco"/>
 </qualifiedTypeNameHistroy>

@@ -3,7 +3,7 @@ package jflorentino;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Conta {
+public class Conta implements ElementosDoBanco{
 	
 	private int numero;
 	private String dataAbert;
@@ -209,6 +209,14 @@ public class Conta {
 		}
 						
 		System.out.println("Saldo: " + getSaldo());
+		
+	}
+
+
+	@Override
+	public String getElementoInfo() {
+		return "Conta{" + "numero=" + numero + ", dataAbertura=" + getDataAbert() + ", "
+				+ "status=" + status + ", senha=" + senha + ", saldo=" + saldo + ", titular=" + titular + '}';
 		
 	}
 	

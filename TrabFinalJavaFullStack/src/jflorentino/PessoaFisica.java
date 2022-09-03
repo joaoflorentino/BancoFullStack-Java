@@ -86,6 +86,12 @@ public class PessoaFisica extends Pessoa{
 		return "PessoaFisica [cpf=" + cpf + ", nascimento=" 
 	+ nascimento + ", rg=" + rg + ", renda=" + renda + ", nome=" + nome + "]";
 	}
+
+	@Override
+	public String getElementoInfo() {
+		return "PessoaFisica{" + "cpf=" + cpf + ", dataNascimento=" + nascimento + ", "
+				+ "rg=" + rg + ", renda=" + renda + '}';
+	}
 	
 	
 	

@@ -71,8 +71,12 @@ public class PessoaJuridica extends Pessoa{
 		return "PessoaJuridica [cnpj=" + cnpj + ", cidade=" 
 	+ cidade + ", estado=" + estado + "nome=" + nome +"]";
 	}
+
+	@Override
+	public String getElementoInfo() {
+		return "PessoaJuridica{" + "cnpj=" + cnpj + ", cidade=" + cidade + ", estado=" + estado + '}';
 	
-	
+	}
 	
 	
 	

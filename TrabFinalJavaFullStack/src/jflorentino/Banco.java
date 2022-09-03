@@ -52,7 +52,7 @@ public class Banco {
 		contaesp.saque(1000f);
 		contaesp.relatorio();
 		
-		/*
+		
 		// ordena as contas por saldo do maior para o menor
 		contas.sort(new ComparadorSaldoDec());
 		// apresenta relatorio com dados das contas, titulares, movimentaçoes e saldo
@@ -68,7 +68,7 @@ public class Banco {
 		
 		for (ElementosDoBanco e: elementos) {
 			System.out.println(e.getElementoInfo());
-		}*/
+		}
 		
 	}    
 

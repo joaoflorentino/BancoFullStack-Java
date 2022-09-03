@@ -1,6 +1,6 @@
 package jflorentino;
 
-public class Pessoa {
+public abstract class Pessoa implements ElementosDoBanco {
 	protected static String nome;
 		
 	
